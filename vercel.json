@@ -2,21 +2,21 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/*.php",
+      "src": "api/**/*.php",  // Se asegura que recursivamente busque archivos PHP dentro de la carpeta api/
       "use": "@vercel/php"
     },
     {
-      "src": "public/*",
+      "src": "public/**/*",  // Se asegura que recursivamente busque archivos en public/
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
+      "src": "/api/(.*)",  // Ruta para API
       "dest": "/api/$1.php"
     },
     {
-      "src": "/(.*)",
+      "src": "/(.*)",  // Ruta para archivos estáticos
       "dest": "/public/$1"
     }
   ]
