@@ -1,4 +1,10 @@
 <?php
+// Permitir solicitudes desde cualquier origen (CORS)
+// Si solo quieres permitir solicitudes desde tu dominio, cambia "*" por la URL de tu dominio.
+header("Access-Control-Allow-Origin: *"); // Cambia "*" por tu dominio si lo deseas
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, X-Requested-With");
+
 $host = 'bh9mruuijpmdvpps5dcm-mysql.services.clever-cloud.com';
 $user = 'ubnyscrxodyrk7lx';
 $password = 'gztpvRJ0dbis7xl0OxGC';
