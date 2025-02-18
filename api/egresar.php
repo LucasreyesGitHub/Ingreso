@@ -1,8 +1,8 @@
 <?php
-$host = 'tu_base_de_datos_host';
-$user = 'tu_usuario';
-$password = 'tu_contraseña';
-$dbname = 'tu_base_de_datos';
+$host = 'bh9mruuijpmdvpps5dcm-mysql.services.clever-cloud.com';
+$user = 'ubnyscrxodyrk7lx';
+$password = 'gztpvRJ0dbis7xl0OxGC';
+$dbname = 'bh9mruuijpmdvpps5dcm';
 
 $conn = new mysqli($host, $user, $password, $dbname);
 
